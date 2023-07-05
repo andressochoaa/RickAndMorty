@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../service/api.service';
-import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-home',
@@ -18,7 +17,7 @@ export class HomeComponent implements OnInit {
   }
 
   llenarData(){
-    this.apiService.getData().subscribe( data => {
+    this.apiService.getPersonajes().subscribe( data => {
       this.data = data.results;
       console.log(data.results);
     }) ;

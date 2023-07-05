@@ -20,8 +20,8 @@
 .imagen {
     width: 100%;
     padding-top: 10px;
-    padding-bottom: 10px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .card-personajes {

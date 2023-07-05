@@ -7,11 +7,15 @@ import { Observable } from 'rxjs';
 })
 export class ApiService {
 
-  private urlApi = 'https://rickandmortyapi.com/api/character';
+  private urlApi = 'https://rickandmortyapi.com/api/character/';
 
   constructor(private http: HttpClient) { }
 
-  public getData(): Observable<any>{
-    return this.http.get<any>(this.urlApi);
+  public getPersonajes(): Observable<any>{
+    return this.http.get<any>(`${this.urlApi}`);
+  }
+
+  public getPersonaje(id: number): Observable<any>{
+    return this.http.get<any>(`${this.urlApi}${id}`);
   }
 }
