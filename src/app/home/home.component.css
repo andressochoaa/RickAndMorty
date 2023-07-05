@@ -1,9 +1,28 @@
+.general{
+    background-color: white;
+}
+
 .backgrd {
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .logo {
     display: flex;
     justify-content: center;
+}
+
+.imagen {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.card-personajes {
+    background-color: #87E4F9FF;
+    max-width: 350px;
+    margin: 10px;
 }

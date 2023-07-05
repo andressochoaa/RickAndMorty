@@ -2,12 +2,28 @@
     <title>RICK AND MORTY API</title>
 </div>
 
-<div class="logo">
-    <img [src]="'https://pngimg.com/uploads/rick_morty/rick_morty_PNG40.png'">
-</div>
-
-<div class="backgrd">
-    <ng-container *ngFor="let item of data">
-            <img src="{{ item.image }}" alt="imagen">
-    </ng-container>
+<div class="general">
+    <div class="logo">
+        <img [src]="'https://pngimg.com/uploads/rick_morty/rick_morty_PNG40.png'">
+    </div>
+    
+    <div class="backgrd">
+        <ng-container *ngFor="let item of data">
+            <mat-card class="card-personajes">
+                <mat-card-header>
+                  <mat-card-title>{{item.name}}</mat-card-title>
+                  <mat-card-subtitle>Status: {{item.status}}</mat-card-subtitle>
+                </mat-card-header>
+                <img class="imagen" src="{{ item.image }}" alt="imagen">
+                <mat-card-content>
+                  <p>
+                    Specie: {{item.species}}
+                  </p>
+                  <p>
+                    Gender: {{item.gender}}
+                  </p>
+                </mat-card-content>
+              </mat-card>
+        </ng-container>
+    </div>
 </div>
