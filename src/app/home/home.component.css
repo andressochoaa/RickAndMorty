@@ -12,6 +12,9 @@
 .logo {
     display: flex;
     justify-content: center;
+    width: auto;
+    height: 150px;
+    padding: 20px;
 }
 
 .imagen {
