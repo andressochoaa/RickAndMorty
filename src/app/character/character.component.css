@@ -26,9 +26,14 @@
 
 .card-personajes {
     background-color: #69C8ECFF;
-    max-width: 550px;
+    max-width: 360px;
+    box-shadow: 
+            0 0 1rem black;
 }
 
 .info-name {
-    padding-right: 30px;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

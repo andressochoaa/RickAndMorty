@@ -11,18 +11,21 @@
 
     <div class="backgrd">
         <mat-card class="card-personajes">
-            <mat-card-header>
-              <mat-card-title-group>
-                <div class="info-name">
-                    <mat-card-title> {{personaje.name}} </mat-card-title>
-                    <mat-card-subtitle> {{personaje.species}} | {{personaje.gender}}</mat-card-subtitle>
-                </div>
-                <img class="imagen" src="{{personaje.image}}" alt="imagen character">
-              </mat-card-title-group>
-            </mat-card-header>
-            <mat-card-content>
-                {{personaje.episode}}
-            </mat-card-content>
-          </mat-card>
+            <div class="info-name">
+                <mat-card-title> {{personaje.name}} </mat-card-title>
+            </div>
+            <img class="imagen" src="{{personaje.image}}" alt="imagen character">
+            <div class="content">
+                <mat-card-content>
+                    Origin: {{personaje.origin.name}}
+                </mat-card-content>
+                <mat-card-content>
+                    Location: {{personaje.location.name}}
+                </mat-card-content>
+                <mat-card-content>
+                    Episodes: {{personaje.episode}}
+                </mat-card-content>
+            </div>
+        </mat-card>
     </div>
 </div>

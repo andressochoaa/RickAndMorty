@@ -28,4 +28,6 @@
     background-color: #69C8ECFF;
     max-width: 350px;
     margin: 10px;
+    box-shadow: 
+            0 0 0.6rem black;
 }
