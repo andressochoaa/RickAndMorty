@@ -13,7 +13,7 @@
         <mat-card class="card-personajes">
             <div class="info-name">
                 <p [ngClass]="personaje.status == 'Alive' ? 'Alive' : ''"></p>
-                <mat-card-title> {{personaje.name}} </mat-card-title>
+                <mat-card-title style="color: #526E2DFF;"> {{personaje.name}} </mat-card-title>
             </div>
             <img class="imagen" src="{{personaje.image}}" alt="imagen character">
             <div class="content">
