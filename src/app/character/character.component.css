@@ -20,16 +20,15 @@
 }
 
 .imagen {
-    width: 100%;
+    width: 360px;
     border-radius: 5px;
 }
 
 .card-personajes {
     background-color: #69C8ECFF;
-    max-width: 600px;
+    max-width: 550px;
 }
 
 .info-name {
     padding-right: 30px;
-    
 }
