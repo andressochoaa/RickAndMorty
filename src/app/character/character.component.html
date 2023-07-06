@@ -9,7 +9,7 @@
         </a>
     </div>
 
-    <div class="backgrd">
+    <div class="backgrd" *ngIf="load">
         <mat-card class="card-personajes">
             <div class="info-name">
                 <p [ngClass]="personaje.status == 'Alive' ? 'Alive' : ''"></p>
@@ -17,21 +17,12 @@
             </div>
             <img class="imagen" src="{{personaje.image}}" alt="imagen character">
             <div class="content">
-                <mat-card-content>
-                    Gender: {{personaje.gender}}
-                </mat-card-content>
-                <mat-card-content>
-                    Species: {{personaje.species}}
-                </mat-card-content>
-                <mat-card-content>
-                    Origin: {{personaje.origin.name}}
-                </mat-card-content>
-                <mat-card-content>
+                <mat-card-subtitle style="color: black; padding: 10px;">
+                    Gender: {{personaje.gender}} <br>
+                    Species: {{personaje.species}} <br>
+                    Origin: {{personaje.origin.name}} <br>
                     Location: {{personaje.location.name}}
-                </mat-card-content>
-                <mat-card-content>
-                    Episodes: {{personaje.episode}}
-                </mat-card-content>
+                </mat-card-subtitle>
             </div>
         </mat-card>
     </div>

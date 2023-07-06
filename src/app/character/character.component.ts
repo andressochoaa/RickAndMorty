@@ -9,11 +9,12 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CharacterComponent {
   id: number;
-  personaje: any = {}; 
-  episodios: any[] = [];
+  personaje: any = {};
+  load: boolean;
 
   constructor(private _apiService: ApiService, private actRoute: ActivatedRoute){
     this.id = parseInt(this.actRoute.snapshot.paramMap.get('id')!);
+    this.load = false;
   }
 
   ngOnInit(): void{
@@ -23,6 +24,7 @@ export class CharacterComponent {
   obtenerPersonaje(id: number){
     this._apiService.getPersonaje(this.id).subscribe(data => {
       this.personaje = data;
+      this.load = true;
       console.log(this.personaje);
     })
   }

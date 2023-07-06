@@ -18,4 +18,8 @@ export class ApiService {
   public getPersonaje(id: number): Observable<any>{
     return this.http.get<any>(`${this.urlApi}${id}`);
   }
+
+  public getEpisodio(id: number): Observable<any>{
+    return this.http.get<any>(`${this.urlApi}${id}`);
+  }
 }
