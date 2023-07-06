@@ -16,3 +16,16 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.imagen {
+    width: 100%;
+    padding-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.card-personajes {
+    background-color: #69C8ECFF;
+    max-width: 500px;
+    margin: 10px;
+}

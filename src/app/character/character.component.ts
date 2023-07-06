@@ -10,6 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 export class CharacterComponent {
   id: number;
   personaje: any = {}; 
+  episodios: any[] = [];
 
   constructor(private _apiService: ApiService, private actRoute: ActivatedRoute){
     this.id = parseInt(this.actRoute.snapshot.paramMap.get('id')!);
