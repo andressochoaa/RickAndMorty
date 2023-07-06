@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ApiService } from '../service/api.service';
 
 @Component({
@@ -6,10 +6,11 @@ import { ApiService } from '../service/api.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
+
 export class HomeComponent implements OnInit {
 
   data: any [] = []; 
-
+  
   constructor(private apiService: ApiService){}
 
   ngOnInit(): void {
@@ -17,7 +18,7 @@ export class HomeComponent implements OnInit {
   }
 
   llenarData(){
-    this.apiService.getPersonajes().subscribe( data => {
+      this.apiService.getPersonajes().subscribe( data => {
       this.data = data.results;
       console.log(data.results);
     }) ;
