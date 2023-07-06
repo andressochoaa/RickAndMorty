@@ -12,13 +12,11 @@
     <div class="backgrd">
         <mat-card class="card-personajes">
             <div class="info-name">
+                <p [ngClass]="personaje.status == 'Alive' ? 'Alive' : ''"></p>
                 <mat-card-title> {{personaje.name}} </mat-card-title>
             </div>
             <img class="imagen" src="{{personaje.image}}" alt="imagen character">
             <div class="content">
-                <mat-card-content>
-                    Status: {{personaje.status}}
-                </mat-card-content>
                 <mat-card-content>
                     Gender: {{personaje.gender}}
                 </mat-card-content>
