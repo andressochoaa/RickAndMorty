@@ -37,3 +37,7 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.info-name {
+    padding: 10px;
+}
