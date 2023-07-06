@@ -13,8 +13,10 @@
         <mat-card class="card-personajes">
             <mat-card-header>
               <mat-card-title-group>
-                <mat-card-title> {{personaje.name}} </mat-card-title>
-                <mat-card-subtitle> {{personaje.gender}} </mat-card-subtitle>
+                <div class="info-name">
+                    <mat-card-title> {{personaje.name}} </mat-card-title>
+                    <mat-card-subtitle> {{personaje.species}} | {{personaje.gender}}</mat-card-subtitle>
+                </div>
                 <img class="imagen" src="{{personaje.image}}" alt="imagen character">
               </mat-card-title-group>
             </mat-card-header>

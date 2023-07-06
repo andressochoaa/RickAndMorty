@@ -1,5 +1,7 @@
 .general{
     background-color: #24325FFF;
+    width: 100%;
+    height: 100%;
 }
 
 .logo {
@@ -19,13 +21,15 @@
 
 .imagen {
     width: 100%;
-    padding-top: 10px;
-    cursor: pointer;
     border-radius: 5px;
 }
 
 .card-personajes {
     background-color: #69C8ECFF;
-    max-width: 500px;
-    margin: 10px;
+    max-width: 600px;
+}
+
+.info-name {
+    padding-right: 30px;
+    
 }
